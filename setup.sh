@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
+set -e
 
-# Script to setup a python virtualenv with PyTorch
+##### Script to setup a Python virtualenv with PyTorch #####
 
-# Load Python3.6 to local environment because it is supported by
+# Load Python3.5.2 to local environment because it is supported by
 # PyTorch
-module load python/3.6.0
+module load python/3.5.2
+
+python3 --version
 
 # Install latest version of virtualenv
 pip3 install --user virtualenv
@@ -17,6 +20,11 @@ $PY_USER_BIN/virtualenv -p python3 $1
 
 # Go into virtualenv
 source $1/bin/activate
+
+PIP3_PATH=$(which pip3)
+
+# #### Fixes bug with Python3.5.2 pip
+sed -i 's/from pip._internal import main/from pip import main/g' $PIP3_PATH
 
 # Install PyTorch
 pip3 install torch torchvision
