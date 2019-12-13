@@ -24,7 +24,7 @@ source $1/bin/activate
 PIP3_PATH=$(which pip3)
 
 # #### Fixes bug with Python3.5.2 pip
-sed -i 's/from pip._internal import main/from pip import main/g' $PIP3_PATH
+sed -i 's/from pip._internal.main import main/from pip import main/g' $PIP3_PATH
 
 # Install PyTorch
 pip3 install torch torchvision
