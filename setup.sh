@@ -27,4 +27,5 @@ PIP3_PATH=$(which pip3)
 sed -i 's/from pip._internal.main import main/from pip import main/g' $PIP3_PATH
 
 # Install PyTorch
-pip3 install torch torchvision
+pip3 install torch==1.3.1+cu100 torchvision==0.4.2+cu100 -f https://download.pytorch.org/whl/torch_stable.html
+pip3 install horovod
