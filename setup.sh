@@ -3,6 +3,9 @@ set -e
 
 ##### Script to setup a Python virtualenv with PyTorch #####
 
+# Check to see if the virtualenv path has been specified
+[[ -z "$1" ]] && { echo "Please pass in the desired path for the virtualenv." ; exit 1; }
+
 # Load Python3.5.2 to local environment because it is supported by
 # PyTorch
 module load python/3.5.2
@@ -26,5 +29,5 @@ PIP3_PATH=$(which pip3)
 # #### Fixes bug with Python3.5.2 pip
 sed -i 's/from pip._internal.main import main/from pip import main/g' $PIP3_PATH
 
-# Install PyTorch
-pip3 install torch torchvision
+# Install PyTorch (CUDA 10.0 compatible version)
+pip3 install torch==1.3.1+cu100 torchvision==0.4.2+cu100 -f https://download.pytorch.org/whl/torch_stable.html
