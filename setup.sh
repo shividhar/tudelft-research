@@ -3,6 +3,9 @@ set -e
 
 ##### Script to setup a Python virtualenv with PyTorch #####
 
+# Check to see if the virtualenv path has been specified
+[[ -z "$1" ]] && { echo "Please pass in the desired path for the virtualenv." ; exit 1; }
+
 # Load Python3.5.2 to local environment because it is supported by
 # PyTorch
 module load python/3.5.2
