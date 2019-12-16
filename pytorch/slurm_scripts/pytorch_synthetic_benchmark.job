@@ -3,12 +3,11 @@
 #SBATCH -N 2
 #SBATCH --gres=gpu:1
 #SBATCH -C TitanX
-#SBATCH --nodelist=node001,node002
+#SBATCH --nodelist=node046,node047
+#SBATCH --ntasks-per-node=1
 
 . /etc/bashrc
 . /etc/profile.d/modules.sh
-
-# module load openmpi/gcc/64
 
 # Shivansh settings
 module load python/3.5.2
@@ -21,24 +20,23 @@ module load cuda10.0/toolkit/10.0.130
 
 module load cuDNN/cuda90/7.1
 
-module load openmpi/cuda/64/3.1.1
-# module load mpich/ge/gcc/64/3.2
-# module load mvapich2/gcc/64/2.2rc1
-# module load fftw3/openmpi/gcc/64/3.3.6
-# module load fftw2/openmpi/gcc/64/double/2.1.5
+# module load openmpi/cuda/64/3.1.1
+module load openmpi/gcc/64/4.0.2
 
 module load nccl/cuda90/2.1.2
 
 source /var/scratch/sdhar/venv_pytorch/bin/activate
 
-export CUDA_VISIBLE_DEVICES=0
+# export CUDA_VISIBLE_DEVICES=0
 
-# horovodrun -np 2 -H node003:1,node004:1 python3 --verbose --start-timeout=300 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
+# horovodrun -np 2 -H node047:1,node004:1 python3 --verbose --start-timeout=300 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
 
-# horovodrun -np 2 -H node003:1,node004:1 python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
+# horovodrun -np 2 -H node047:1,node004:1 python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
 mpirun -np 2 \
-    -H node001:1,node002:1 \
-    -bind-to none -map-by slot \
-    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
-    -mca pml ob1 -mca btl ^openib \
-    python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
+   -H node046,node047 \
+   -bind-to none -map-by slot \
+   -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
+   -mca pml ob1 -mca btl ^openib \
+   -mca btl_tcp_if_include eth0 \
+   --verbose \
+   python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
