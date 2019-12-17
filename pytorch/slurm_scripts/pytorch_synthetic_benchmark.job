@@ -1,10 +1,13 @@
 #!/bin/bash
 #SBATCH --time=00:15:00
 #SBATCH -N 2
-#SBATCH --gres=gpu:1
-#SBATCH -C TitanX
-#SBATCH --nodelist=node046,node047
-#SBATCH --ntasks-per-node=1
+#SBATCH --gres=gpu:4
+#SBATCH --nodelist=node403,node407
+
+# This is very important. It will limit the number of script executions to
+# exactly the required number of tasks.
+
+#SBATCH --ntasks-per-node=4
 
 . /etc/bashrc
 . /etc/profile.d/modules.sh
@@ -29,14 +32,11 @@ source /var/scratch/sdhar/venv_pytorch/bin/activate
 
 # export CUDA_VISIBLE_DEVICES=0
 
-# horovodrun -np 2 -H node047:1,node004:1 python3 --verbose --start-timeout=300 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
-
-# horovodrun -np 2 -H node047:1,node004:1 python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
-mpirun -np 2 \
-   -H node046,node047 \
+mpirun -np 8 \
+   -H node403:4,node407:4 \
    -bind-to none -map-by slot \
    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
    -mca pml ob1 -mca btl ^openib \
    -mca btl_tcp_if_include eth0 \
    --verbose \
-   python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py
+   python3 /home/sdhar/tudelft-research/pytorch/pytorch_imagenet_resnet50_horovod.py
