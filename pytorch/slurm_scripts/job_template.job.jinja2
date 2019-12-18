@@ -1,0 +1,32 @@
+# Preconditions: Please use the setup.py script to make a virtualenv
+# called "venv_pytorch"
+
+#!/bin/bash
+{% if timeout %}
+#SBATCH --time={{ timeout }}
+{% endif %}
+#SBATCH -N {{ node_count }}
+#SBATCH --nodelist={{ nodes }}
+
+# This is very important. It will limit the number of script
+# execution toexactly the required number of tasks.
+
+#SBATCH --ntasks-per-node={{ gpus_per_node }}
+
+. /etc/bashrc
+. /etc/profile.d/modules.sh
+
+# Module imports
+{% for module in modules %}
+module load {{ module }}
+{% endfor %}
+
+### NOTE: May need to specify slots with specified host list
+mpirun -np {{ node_count * gpus_per_node }} \
+   -H {{ nodes }} \
+   -bind-to none -map-by slot \
+   -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
+   -mca pml ob1 -mca btl ^openib \
+   -mca btl_tcp_if_include eth0 \
+   --verbose \
+   python3 {{ script_path }}
