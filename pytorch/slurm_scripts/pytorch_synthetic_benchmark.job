@@ -1,13 +1,14 @@
 #!/bin/bash
-#SBATCH --time=00:15:00
-#SBATCH -N 2
-#SBATCH --gres=gpu:4
-#SBATCH --nodelist=node403,node407
+{% if timeout %}
+#SBATCH --time={{ timeout }}
+{% endif %}
+#SBATCH -N {{ node_count }}
+#SBATCH --nodelist= {{ nodes }}
 
 # This is very important. It will limit the number of script executions to
 # exactly the required number of tasks.
 
-#SBATCH --ntasks-per-node=4
+#SBATCH --ntasks-per-node={{ gpus_per_node }}
 
 . /etc/bashrc
 . /etc/profile.d/modules.sh
@@ -23,20 +24,18 @@ module load cuda10.0/toolkit/10.0.130
 
 module load cuDNN/cuda90/7.1
 
-# module load openmpi/cuda/64/3.1.1
 module load openmpi/gcc/64/4.0.2
 
 module load nccl/cuda90/2.1.2
 
 source /var/scratch/sdhar/venv_pytorch/bin/activate
 
-# export CUDA_VISIBLE_DEVICES=0
-
-mpirun -np 8 \
-   -H node403:4,node407:4 \
+### NOTE: May need to specify slots with specified host list
+mpirun -np {{ node_count * gpus_per_node }} \
+   -H {{ nodes }} \
    -bind-to none -map-by slot \
    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
    -mca pml ob1 -mca btl ^openib \
    -mca btl_tcp_if_include eth0 \
    --verbose \
-   python3 /home/sdhar/tudelft-research/pytorch/pytorch_imagenet_resnet50_horovod.py
+   python3 {{ script_path }}
