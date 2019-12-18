@@ -75,6 +75,7 @@ with open(args.jinja_template) as file_:
 
 print(template.render(
     timeout=args.timeout,
+    modules=args.modules,
     node_count=len(args.nodes.split(",")),
     nodes=args.nodes,
     gpus_per_node=args.gpus_per_node,

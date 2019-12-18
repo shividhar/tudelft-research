@@ -22,6 +22,8 @@
 module load {{ module }}
 {% endfor %}
 
+source /var/scratch/sdhar/venv_pytorch/bin/activate
+
 ### NOTE: May need to specify slots with specified host list
 mpirun -np {{ node_count * gpus_per_node }} \
    -H {{ nodes }} \
