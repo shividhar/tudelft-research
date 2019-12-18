@@ -1,7 +1,8 @@
+#!/bin/bash
+
 # Preconditions: Please use the setup.py script to make a virtualenv
 # called "venv_pytorch"
 
-#!/bin/bash
 {% if timeout %}
 #SBATCH --time={{ timeout }}
 {% endif %}
