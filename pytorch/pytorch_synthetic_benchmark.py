@@ -9,6 +9,7 @@ from torchvision import models
 import horovod.torch as hvd
 import timeit
 import numpy as np
+import csv
 
 # Benchmark settings
 parser = argparse.ArgumentParser(description='PyTorch Synthetic Benchmark',
@@ -78,16 +79,42 @@ def benchmark_step():
     optimizer.step()
 
 
-def log(s, nl=True):
+def log(s, nl=True, file_log=True):
     if hvd.rank() != 0:
         return
     print(s, end='\n' if nl else '')
+    with open("/var/scratch/sdhar/logs/pytorch_synthetic.log","a") as f:
+        f.write(s + "\n")
 
+def log_csv(
+    model,
+    batch_size,
+    device,
+    num_devices,
+    img_sec_mean,
+    img_sec_conf,
+    total_img_sec_mean,
+    total_img_sec_conf):
+    if hvd.rank() != 0:
+        return
+    with open('/var/scratch/sdhar/logs/pytorch_synthetic.csv', 'a', newline='') as f:
+        csvwriter = csv.writer(f, lineterminator="\n")
+        csvwriter.writerow([
+            model,
+            batch_size,
+            device,
+            num_devices,
+            img_sec_mean,
+            img_sec_conf,
+            total_img_sec_mean,
+            total_img_sec_conf])
 
-log('Model: %s' % args.model)
-log('Batch size: %d' % args.batch_size)
+log("#### Start Training ####", file_log=True)
+
+log('Model: %s' % args.model, file_log=True)
+log('Batch size: %d' % args.batch_size, file_log=True)
 device = 'GPU' if args.cuda else 'CPU'
-log('Number of %ss: %d' % (device, hvd.size()))
+log('Number of %ss: %d' % (device, hvd.size()), file_log=True)
 
 # Warm-up
 log('Running warmup...')
@@ -105,7 +132,18 @@ for x in range(args.num_iters):
 # Results
 img_sec_mean = np.mean(img_secs)
 img_sec_conf = 1.96 * np.std(img_secs)
-log('Img/sec per %s: %.1f +-%.1f' % (device, img_sec_mean, img_sec_conf))
+log('Img/sec per %s: %.1f +-%.1f' % (device, img_sec_mean, img_sec_conf), file_log=True)
 log('Total img/sec on %d %s(s): %.1f +-%.1f' %
-    (hvd.size(), device, hvd.size() * img_sec_mean, hvd.size() * img_sec_conf))
+    (hvd.size(), device, hvd.size() * img_sec_mean, hvd.size() * img_sec_conf), file_log=True)
 
+log("#### End Training ####", file_log=True)
+
+log_csv(
+    args.model,
+    str(args.batch_size),
+    device,
+    str(hvd.size()),
+    str(img_sec_mean),
+    str(img_sec_conf),
+    str(hvd.size() * img_sec_mean),
+    str(hvd.size() * img_sec_conf))

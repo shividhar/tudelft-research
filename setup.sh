@@ -34,3 +34,5 @@ pip3 install torch==1.3.1+cu100 torchvision==0.4.2+cu100 -f https://download.pyt
 
 # Step 5 of https://github.com/horovod/horovod/blob/master/docs/gpus.rst
 HOROVOD_NCCL_HOME=/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64 HOROVOD_GPU_ALLREDUCE=NCCL pip3 install --no-cache-dir horovod
+
+PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages
