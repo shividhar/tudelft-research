@@ -10,10 +10,23 @@ set -e
 # PyTorch
 module load python/3.5.2
 
+module load cuda10.0/blas/10.0.130
+module load cuda10.0/fft/10.0.130
+module load cuda10.0/nsight/10.0.130
+module load cuda10.0/profiler/10.0.130
+module load cuda10.0/toolkit/10.0.130
+
+module load cuDNN/cuda90/7.1
+
+module load openmpi/cuda/64/3.1.1
+
 python3 --version
 
 # Install latest version of virtualenv
 pip3 install --user virtualenv
+
+# Install Jinja to generate SLURM Scripts
+pip3 install --user jinja2
 
 # Path to locally install Python packages
 PY_USER_BIN=$(python3 -c 'import site; print(site.USER_BASE + "/bin")')
