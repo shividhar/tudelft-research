@@ -92,6 +92,7 @@ def log_csv(
     device,
     num_devices,
     num_devices_per_node,
+    disable_nccl_p2p,
     disable_ib,
     img_sec_mean,
     img_sec_conf,
@@ -107,6 +108,7 @@ def log_csv(
             device,
             num_devices,
             num_devices_per_node,
+            disable_nccl_p2p,
             disable_ib,
             img_sec_mean,
             img_sec_conf,
@@ -148,7 +150,9 @@ log_csv(
     device,
     str(hvd.size()),
     str(hvd.local_size()),
-    #Disable_infiniband
+    #Disable NCCL P2P Communication
+    "1",
+    #Disable infiniband
     "0",
     str(img_sec_mean),
     str(img_sec_conf),
