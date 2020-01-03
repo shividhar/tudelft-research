@@ -47,6 +47,14 @@ optional.add_argument(
     nargs='?'
 )
 optional.add_argument(
+    "--disable_ib",
+    dest="disable_ib",
+    default=0,
+    type=int,
+    help="Flag to disable InifiBand",
+    nargs='?'
+)
+optional.add_argument(
     "-m",
     "--modules",
     dest="modules",
@@ -75,6 +83,7 @@ with open(args.jinja_template) as file_:
 
 print(template.render(
     timeout=args.timeout,
+    disable_ib=args.disable_ib,
     modules=args.modules,
     node_count=len(args.nodes.split(",")),
     nodes=args.nodes,
