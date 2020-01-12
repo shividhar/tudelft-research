@@ -34,7 +34,7 @@ mpirun -np {{ node_count * gpus_per_node }} \
    -bind-to none -map-by slot \
    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
    -x NCCL_IB_DISABLE={{ disable_ib }} \
-   -x NCCL_P2P_DISABLE=1 \
+   -x NCCL_P2P_DISABLE=0 \
    -mca pml ob1 -mca btl ^openib \
    -mca btl_tcp_if_include eth0 \
    --verbose \

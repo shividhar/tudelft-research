@@ -151,7 +151,7 @@ log_csv(
     str(hvd.size()),
     str(hvd.local_size()),
     #Disable NCCL P2P Communication
-    "1",
+    "0",
     #Disable infiniband
     "0",
     str(img_sec_mean),
