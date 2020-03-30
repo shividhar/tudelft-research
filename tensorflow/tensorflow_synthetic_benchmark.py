@@ -130,3 +130,52 @@ with tf.device(device):
     log('Img/sec per %s: %.1f +-%.1f' % (device, img_sec_mean, img_sec_conf))
     log('Total img/sec on %d %s(s): %.1f +-%.1f' %
         (hvd.size(), device, hvd.size() * img_sec_mean, hvd.size() * img_sec_conf))
+
+### Adding Logging capabilities
+
+parser.add_argument('--log-file', type=str,
+                    help='CSV log file path')
+
+def log_csv(
+    model,
+    batch_size,
+    device,
+    num_devices,
+    num_devices_per_node,
+    disable_nccl_p2p,
+    disable_ib,
+    img_sec_mean,
+    img_sec_conf,
+    total_img_sec_mean,
+    total_img_sec_conf):
+    if hvd.rank() != 0:
+        return
+    with open(args.log_file, 'a', newline='') as f:
+        csvwriter = csv.writer(f, lineterminator="\n")
+        csvwriter.writerow([
+            model,
+            batch_size,
+            device,
+            num_devices,
+            num_devices_per_node,
+            disable_nccl_p2p,
+            disable_ib,
+            img_sec_mean,
+            img_sec_conf,
+            total_img_sec_mean,
+            total_img_sec_conf])
+
+log_csv(
+    args.model,
+    str(args.batch_size),
+    device,
+    str(hvd.size()),
+    str(hvd.local_size()),
+    #Disable NCCL P2P Communication
+    "0",
+    #Disable infiniband
+    "0",
+    str(img_sec_mean),
+    str(img_sec_conf),
+    str(hvd.size() * img_sec_mean),
+    str(hvd.size() * img_sec_conf))

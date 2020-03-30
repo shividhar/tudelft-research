@@ -18,15 +18,20 @@
 . /etc/bashrc
 . /etc/profile.d/modules.sh
 
-PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/
-
-
 # Module imports
 {% for module in modules %}
 module load {{ module }}
 {% endfor %}
 
+# Start Python virtual environment
 source /var/scratch/sdhar/venv_pytorch/bin/activate
+
+export PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/
+
+export LD_LIBRARY_PATH=/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/tensorflow_core/libtensorflow_framework.so.2:$LD_LIBRARY_PATH
 
 ### NOTE: May need to specify slots with specified host list
 mpirun -np {{ node_count * gpus_per_node }} \
