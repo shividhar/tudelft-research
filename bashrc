@@ -27,6 +27,12 @@ module load openmpi/cuda/64/3.1.1
 
 export PY_USER_BIN=$(python3 -c 'import site; print(site.USER_BASE + "/bin")')
 export PATH=$PY_USER_BIN:$PATH
+export PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/
 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64/lib:\
+/cm/shared/apps/cuda10.0/toolkit/10.0.130/lib64:\
+/cm/shared/apps/cuda10.0/toolkit/10.0.130/extras/CUPTI/lib64
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64/lib
+alias sq="squeue -S \"N\""
+alias wsq="watch 'squeue -S \"N\"'"
+alias rms="rm slurm-*.out"

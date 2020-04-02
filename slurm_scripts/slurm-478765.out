@@ -1,0 +1,470 @@
+2020-03-30 22:33:01.516594: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-30 22:33:01.517291: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-30 22:33:01.517934: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-30 22:33:01.517910: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-03-30 22:33:01.653499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-03-30 22:33:01.653567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-03-30 22:33:01.654286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-03-30 22:33:01.654508: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-03-30 22:33:01.659263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-03-30 22:33:01.659576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-03-30 22:33:01.660060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-03-30 22:33:01.660492: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-03-30 22:33:01.664819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-03-30 22:33:01.665391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-03-30 22:33:01.665626: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-03-30 22:33:01.666223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-03-30 22:33:01.670641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-03-30 22:33:01.670716: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:01.670975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-03-30 22:33:01.671058: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:01.671085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-03-30 22:33:01.671135: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:01.671310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-03-30 22:33:01.671399: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:01.673403: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:01.674205: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:01.674427: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:01.674508: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:01.675614: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:01.676821: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:01.676868: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:01.677121: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:01.677251: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:01.678247: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:01.678402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:01.678706: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:01.679486: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:01.681361: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:01.681806: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:01.682065: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:01.682485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:01.684595: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:01.684805: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:01.685450: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:01.686540: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:01.692112: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:01.692329: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:01.693356: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:01.697216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-03-30 22:33:01.711779: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-30 22:33:01.720707: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-03-30 22:33:01.722556: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4523810 executing computations on platform Host. Devices:
+2020-03-30 22:33:01.722575: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-30 22:33:01.724905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-03-30 22:33:01.724969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-03-30 22:33:01.726681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-03-30 22:33:01.749630: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-30 22:33:01.750228: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-30 22:33:01.751044: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-03-30 22:33:01.764781: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-03-30 22:33:01.764902: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-03-30 22:33:01.766787: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4525340 executing computations on platform Host. Devices:
+2020-03-30 22:33:01.766813: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-30 22:33:01.766781: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4526be0 executing computations on platform Host. Devices:
+2020-03-30 22:33:01.766809: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-30 22:33:01.768398: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-03-30 22:33:01.770284: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x452c2c0 executing computations on platform Host. Devices:
+2020-03-30 22:33:01.770317: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-03-30 22:33:01.935783: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4586730 executing computations on platform CUDA. Devices:
+2020-03-30 22:33:01.935836: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-03-30 22:33:01.939278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-03-30 22:33:01.939345: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:01.939384: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:01.939402: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:01.939418: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:01.939434: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:01.939449: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:01.939466: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:01.945511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 1
+2020-03-30 22:33:01.945550: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:01.996481: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4588260 executing computations on platform CUDA. Devices:
+2020-03-30 22:33:01.996524: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-03-30 22:33:02.004589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-03-30 22:33:02.004675: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:02.004738: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:02.004772: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:02.004806: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:02.004840: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:02.004874: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:02.004909: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:02.007375: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x458f1e0 executing computations on platform CUDA. Devices:
+2020-03-30 22:33:02.007417: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-03-30 22:33:02.007586: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4589b00 executing computations on platform CUDA. Devices:
+2020-03-30 22:33:02.007629: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-03-30 22:33:02.010965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-03-30 22:33:02.011039: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:02.011077: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:02.011100: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:02.011122: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:02.011144: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:02.011166: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:02.011189: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:02.011940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-03-30 22:33:02.012019: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:02.012071: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:02.012107: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-03-30 22:33:02.012140: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-03-30 22:33:02.012176: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-03-30 22:33:02.012212: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-03-30 22:33:02.012247: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:02.012499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 3
+2020-03-30 22:33:02.012572: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:02.018633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-03-30 22:33:02.018697: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:02.020946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 2
+2020-03-30 22:33:02.021025: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-03-30 22:33:02.076189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-30 22:33:02.076248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      1 
+2020-03-30 22:33:02.076257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N 
+2020-03-30 22:33:02.078347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5667 MB memory) -> physical GPU (device: 1, name: GeForce GTX 980 Ti, pci bus id: 0000:03:00.0, compute capability: 5.2)
+2020-03-30 22:33:02.158255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-30 22:33:02.158320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-03-30 22:33:02.158330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-03-30 22:33:02.160756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5667 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:02:00.0, compute capability: 5.2)
+2020-03-30 22:33:02.162337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-30 22:33:02.162387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      2 
+2020-03-30 22:33:02.162396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   N 
+2020-03-30 22:33:02.164899: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5667 MB memory) -> physical GPU (device: 2, name: GeForce GTX 980 Ti, pci bus id: 0000:82:00.0, compute capability: 5.2)
+2020-03-30 22:33:02.178822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-30 22:33:02.178869: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      3 
+2020-03-30 22:33:02.178878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 3:   N 
+2020-03-30 22:33:02.181401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5667 MB memory) -> physical GPU (device: 3, name: GeForce GTX 980 Ti, pci bus id: 0000:83:00.0, compute capability: 5.2)
+Model: ResNet50
+Batch size: 32
+Number of GPUs: 4
+Running warmup...
+2020-03-30 22:33:18.594494: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:18.795204: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:18.811295: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:18.987013: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:19.026536: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:19.222719: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:19.469106: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-03-30 22:33:19.713494: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-03-30 22:33:19.855945: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-03-30 22:33:19.972731: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-03-30 22:33:20.173331: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-03-30 22:33:20.646543: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-03-30 22:33:25.421994: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.664038: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.742249: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.747431: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.810222: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.815378: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.839218: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:25.978198: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.127472: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.217206: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.218460: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.222461: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.285380: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.290515: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.297374: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.302365: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.364416: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.369515: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.583337: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:26.863062: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+node206:16168:16315 [0] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:16168:16315 [0] INFO NET/IB : Using interface ib0 for sideband communication
+2020-03-30 22:33:26.951947: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+node206:16168:16315 [0] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:16168:16315 [0] INFO Using internal Network IB
+node206:16168:16315 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+NCCL version 2.1.2+cuda9.0
+2020-03-30 22:33:26.957108: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+node206:16169:16312 [1] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:16169:16312 [1] INFO NET/IB : Using interface ib0 for sideband communication
+node206:16170:16311 [2] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:16170:16311 [2] INFO NET/IB : Using interface ib0 for sideband communication
+node206:16171:16310 [3] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:16171:16310 [3] INFO NET/IB : Using interface ib0 for sideband communication
+node206:16169:16312 [1] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:16169:16312 [1] INFO Using internal Network IB
+node206:16169:16312 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+node206:16171:16310 [3] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:16171:16310 [3] INFO Using internal Network IB
+node206:16171:16310 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+node206:16170:16311 [2] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:16170:16311 [2] INFO Using internal Network IB
+node206:16170:16311 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+2020-03-30 22:33:27.041162: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-03-30 22:33:27.046314: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+node206:16168:16315 [0] INFO CUDA Dev 0, IB Ports : mlx4_0/1(SOC) 
+node206:16170:16311 [2] INFO CUDA Dev 2, IB Ports : mlx4_0/1(PHB) 
+node206:16169:16312 [1] INFO CUDA Dev 1, IB Ports : mlx4_0/1(SOC) 
+node206:16171:16310 [3] INFO CUDA Dev 3, IB Ports : mlx4_0/1(PHB) 
+node206:16168:16315 [0] INFO Using 256 threads
+node206:16168:16315 [0] INFO Min Comp Cap 5
+node206:16168:16315 [0] INFO NCCL_SINGLE_RING_THRESHOLD=131072
+node206:16168:16315 [0] INFO [0] Ring 0 :    0   1   2   3
+node206:16171:16310 [3] INFO 3 -> 2 via P2P/IPC
+node206:16169:16312 [1] INFO 1 -> 0 via P2P/IPC
+node206:16171:16310 [3] INFO 3 -> 0 via direct shared memory
+node206:16169:16312 [1] INFO 1 -> 2 via direct shared memory
+node206:16170:16311 [2] INFO 2 -> 3 via P2P/IPC
+node206:16168:16315 [0] INFO 0 -> 1 via P2P/IPC
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 0
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+2020-03-30 22:33:27.183215: W tensorflow/core/common_runtime/base_collective_executor.cc:216] BaseCollectiveExecutor::StartAbort Unknown: ncclAllReduce failed: invalid argument
+	 [[{{node DistributedGradientTape_Allreduce/HorovodAllreduce_BiasAddGrad_0}}]]
+	 [[HorovodBroadcast_conv4_block1_0_bn_gamma_0/ReadVariableOp/_838]]
+2020-03-30 22:33:27.183243: W tensorflow/core/common_runtime/base_collective_executor.cc:216] BaseCollectiveExecutor::StartAbort Unknown: ncclAllReduce failed: invalid argument
+	 [[{{node DistributedGradientTape_Allreduce/HorovodAllreduce_BiasAddGrad_0}}]]
+	 [[HorovodBroadcast_conv3_block4_3_conv_bias_0/ReadVariableOp/_904]]
+2020-03-30 22:33:27.183249: W tensorflow/core/common_runtime/base_collective_executor.cc:216] BaseCollectiveExecutor::StartAbort Unknown: ncclAllReduce failed: invalid argument
+	 [[{{node DistributedGradientTape_Allreduce/HorovodAllreduce_BiasAddGrad_0}}]]
+	 [[HorovodBroadcast_conv4_block6_2_bn_gamma_0/ReadVariableOp/_610]]
+2020-03-30 22:33:27.188054: W tensorflow/core/common_runtime/base_collective_executor.cc:216] BaseCollectiveExecutor::StartAbort Unknown: ncclAllReduce failed: invalid argument
+	 [[{{node DistributedGradientTape_Allreduce/HorovodAllreduce_BiasAddGrad_0}}]]
+2020-03-30 22:33:27.188049: W tensorflow/core/common_runtime/base_collective_executor.cc:216] BaseCollectiveExecutor::StartAbort Unknown: ncclAllReduce failed: invalid argument
+	 [[{{node DistributedGradientTape_Allreduce/HorovodAllreduce_BiasAddGrad_0}}]]
+2020-03-30 22:33:27.192253: W tensorflow/core/common_runtime/base_collective_executor.cc:216] BaseCollectiveExecutor::StartAbort Unknown: ncclAllReduce failed: invalid argument
+	 [[{{node DistributedGradientTape_Allreduce/HorovodAllreduce_BiasAddGrad_0}}]]
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16168:16315 [0] include/common_coll.h:16 WARN AllReduce : sendbuff is not a valid pointer
+node206:16168:16315 [0] INFO include/common_coll.h:51 -> 4
+node206:16168:16315 [0] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 1
+node206:16169:16312 [1] INFO include/common_coll.h:51 -> 4
+node206:16169:16312 [1] INFO misc/enqueue.cu:105 -> 4
+
+node206:16171:16310 [3] include/common_coll.h:20 WARN AllReduce : sendbuff allocated on device 2 mismatchs with NCCL device 3
+node206:16171:16310 [3] INFO include/common_coll.h:51 -> 4
+node206:16171:16310 [3] INFO misc/enqueue.cu:105 -> 4
+
+node206:16169:16312 [1] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:16169:16312 [1] INFO transport/shm.cu:249 -> 1
+node206:16169:16312 [1] INFO init.cu:100 -> 1
+
+node206:16171:16310 [3] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:16171:16310 [3] INFO transport/shm.cu:249 -> 1
+node206:16171:16310 [3] INFO init.cu:100 -> 1
+
+node206:16168:16315 [0] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:16168:16315 [0] INFO transport/shm.cu:257 -> 1
+node206:16168:16315 [0] INFO init.cu:102 -> 1

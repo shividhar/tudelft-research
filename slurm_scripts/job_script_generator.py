@@ -24,18 +24,17 @@ modules = [
         "nccl/cuda90/2.1.2",
     ]
 
-python_script = "/home/sdhar/tudelft-research/tensorflow/tensorflow_synthetic_benchmark.py --batch_size={batch_size} --disable_ib={disable_ib} --disable_p2p={disable_p2p}"
-
 # Argument validation
 optional = parser._action_groups.pop() # Edited this line
 required = parser.add_argument_group('required arguments')
 
 # Required arguments
 required.add_argument(
-    "--batch_size", 
-    default=32, 
-    type=int, 
-    help="""Training batch size""",
+    "--jinja_template", 
+    default=slurm_template,
+    type=str, 
+    help="""Path to Jinja template used to generate 
+    SLURM Script""",
     required=True)
 required.add_argument(
     "--nodes", 
@@ -47,6 +46,14 @@ required.add_argument(
     "--gpus_per_node",
     type=int,
     help="Number of GPUs per node.",
+    required=True
+)
+required.add_argument(
+    "--script_path",
+    type=str,
+    help="""Path to Python3 script to execute with script arguments.
+    Example: "~/tensorflow_synthetic_benchmark.py --batch_size=32"
+    """,
     required=True
 )
 

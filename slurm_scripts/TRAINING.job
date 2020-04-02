@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Preconditions: Please use the setup.py script to make a virtualenv
+# called "venv_pytorch"
+
+
+#SBATCH -N 1
+#SBATCH --gres=gpu:4
+#SBATCH --nodelist=node206
+
+# This is very important. It will limit the number of script
+# execution toexactly the required number of tasks.
+
+#SBATCH --ntasks-per-node=4
+
+. /etc/bashrc
+. /etc/profile.d/modules.sh
+
+# Module imports
+
+module load python/3.5.2
+
+module load cuda10.0/blas/10.0.130
+
+module load cuda10.0/fft/10.0.130
+
+module load cuda10.0/nsight/10.0.130
+
+module load cuda10.0/profiler/10.0.130
+
+module load cuda10.0/toolkit/10.0.130
+
+module load cuDNN/cuda10.0/7.6.4
+
+module load openmpi/gcc/64/4.0.2
+
+module load nccl/cuda90/2.1.2
+
+
+# Start Python virtual environment
+source /var/scratch/sdhar/venv_pytorch/bin/activate
+
+export PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/
+
+export LD_LIBRARY_PATH=/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/tensorflow_core/libtensorflow_framework.so.2:$LD_LIBRARY_PATH
+
+### NOTE: May need to specify slots with specified host list
+mpirun -np 4 \
+   -H node206 \
+   -bind-to none -map-by slot \
+   -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
+   -x NCCL_IB_DISABLE=0 \
+   -x NCCL_P2P_DISABLE=0 \
+   -mca pml ob1 -mca btl ^openib \
+   -mca btl_tcp_if_include eth0 \
+   --verbose \
+   python3 /home/sdhar/tudelft-research/tensorflow/tensorflow_synthetic_benchmark.py --batch-size=32

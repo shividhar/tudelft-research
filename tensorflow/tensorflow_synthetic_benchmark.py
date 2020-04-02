@@ -18,6 +18,7 @@ import argparse
 import os
 import numpy as np
 import timeit
+import csv
 
 import tensorflow as tf
 import horovod.tensorflow as hvd
@@ -150,7 +151,7 @@ def log_csv(
     total_img_sec_conf):
     if hvd.rank() != 0:
         return
-    with open(args.log_file, 'a', newline='') as f:
+    with open('/var/scratch/sdhar/logs/tensorflow_synthetic.csv', 'a', newline='') as f:
         csvwriter = csv.writer(f, lineterminator="\n")
         csvwriter.writerow([
             model,
