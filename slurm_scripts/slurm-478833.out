@@ -1,0 +1,281 @@
+2020-04-03 21:14:37.461262: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-03 21:14:37.461531: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-03 21:14:37.461448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-03 21:14:37.462084: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2020-04-03 21:14:37.668710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-04-03 21:14:37.668805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-04-03 21:14:37.669062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-04-03 21:14:37.669977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-04-03 21:14:37.676120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-04-03 21:14:37.676231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-04-03 21:14:37.676315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-04-03 21:14:37.677244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-04-03 21:14:37.683476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-04-03 21:14:37.683573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-04-03 21:14:37.683642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-04-03 21:14:37.684555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-04-03 21:14:37.690805: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-04-03 21:14:37.690888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-04-03 21:14:37.690996: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-04-03 21:14:37.691261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-04-03 21:14:37.692011: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:37.692011: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:37.692009: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:37.692012: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:37.694837: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:37.695121: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:37.695266: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:37.695417: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:37.697368: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:37.697572: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:37.697739: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:37.698035: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:37.698286: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:37.698369: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:37.698454: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:37.698778: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:37.701603: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:37.701846: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:37.702018: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:37.702319: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:37.704079: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:37.704224: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:37.704638: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:37.705024: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:37.710714: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:37.711177: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:37.711811: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:37.712527: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:37.768268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-04-03 21:14:37.769840: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-04-03 21:14:37.771095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-04-03 21:14:37.771410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2020-04-03 21:14:37.794781: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-03 21:14:37.796636: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-03 21:14:37.798599: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-03 21:14:37.799192: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-03 21:14:37.807413: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-04-03 21:14:37.808826: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-04-03 21:14:37.809657: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4527e30 executing computations on platform Host. Devices:
+2020-04-03 21:14:37.809689: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-04-03 21:14:37.810761: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4531710 executing computations on platform Host. Devices:
+2020-04-03 21:14:37.810790: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-04-03 21:14:37.811192: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-04-03 21:14:37.812445: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394380000 Hz
+2020-04-03 21:14:37.813488: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4530350 executing computations on platform Host. Devices:
+2020-04-03 21:14:37.813519: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-04-03 21:14:37.814722: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x452a6c0 executing computations on platform Host. Devices:
+2020-04-03 21:14:37.814750: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+2020-04-03 21:14:38.145112: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4594660 executing computations on platform CUDA. Devices:
+2020-04-03 21:14:38.145152: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-04-03 21:14:38.160177: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2020-04-03 21:14:38.160330: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.160387: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:38.160428: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:38.160465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:38.160501: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:38.160549: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:38.160587: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:38.161042: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x458d610 executing computations on platform CUDA. Devices:
+2020-04-03 21:14:38.161091: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-04-03 21:14:38.161100: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x458ad40 executing computations on platform CUDA. Devices:
+2020-04-03 21:14:38.161148: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-04-03 21:14:38.161175: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4593270 executing computations on platform CUDA. Devices:
+2020-04-03 21:14:38.161211: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 980 Ti, Compute Capability 5.2
+2020-04-03 21:14:38.167540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:02:00.0
+2020-04-03 21:14:38.167615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:82:00.0
+2020-04-03 21:14:38.167646: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.167685: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:38.167693: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+2020-04-03 21:14:38.167720: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:38.167725: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.167752: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:38.167764: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:38.167786: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:38.167796: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:38.167800: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.167821: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:38.167827: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:38.167839: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:38.167853: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:38.167859: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:38.167875: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2020-04-03 21:14:38.167890: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:38.167907: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2020-04-03 21:14:38.167923: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:38.167941: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-03 21:14:38.167973: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-03 21:14:38.168007: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:38.170099: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 1
+2020-04-03 21:14:38.170192: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.181209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2020-04-03 21:14:38.181306: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.181502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 2
+2020-04-03 21:14:38.181573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 3
+2020-04-03 21:14:38.181597: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.181672: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2020-04-03 21:14:38.194456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-03 21:14:38.194493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      1 
+2020-04-03 21:14:38.194506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N 
+2020-04-03 21:14:38.207757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5682 MB memory) -> physical GPU (device: 1, name: GeForce GTX 980 Ti, pci bus id: 0000:03:00.0, compute capability: 5.2)
+2020-04-03 21:14:38.208349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-03 21:14:38.208399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2020-04-03 21:14:38.208412: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2020-04-03 21:14:38.208473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-03 21:14:38.208511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      2 
+2020-04-03 21:14:38.208524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   N 
+2020-04-03 21:14:38.208621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-03 21:14:38.208660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      3 
+2020-04-03 21:14:38.208672: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 3:   N 
+2020-04-03 21:14:38.218092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5682 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:02:00.0, compute capability: 5.2)
+2020-04-03 21:14:38.218618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5682 MB memory) -> physical GPU (device: 2, name: GeForce GTX 980 Ti, pci bus id: 0000:82:00.0, compute capability: 5.2)
+2020-04-03 21:14:38.218775: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5682 MB memory) -> physical GPU (device: 3, name: GeForce GTX 980 Ti, pci bus id: 0000:83:00.0, compute capability: 5.2)
+Model: ResNet50
+Batch size: 32
+Number of GPUs: 4
+Running warmup...
+2020-04-03 21:14:55.379590: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:55.605876: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:55.779541: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:56.001947: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:56.248477: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:56.473943: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:56.532964: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2020-04-03 21:14:56.652866: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-04-03 21:14:56.768305: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2020-04-03 21:14:56.915954: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-04-03 21:14:57.421980: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-04-03 21:14:57.720808: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2020-04-03 21:15:02.233547: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.411911: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.464929: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.542979: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.547932: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.609381: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.614476: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.646199: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.723291: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.728534: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.791991: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:02.797117: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:03.795775: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.004390: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.084867: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.172800: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.177952: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.240060: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.245182: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.282705: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.41GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.370757: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.26GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.375904: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.39GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+node206:5360:5504 [0] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:5360:5504 [0] INFO NET/IB : Using interface ib0 for sideband communication
+node206:5360:5504 [0] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:5360:5504 [0] INFO Using internal Network IB
+node206:5360:5504 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+NCCL version 2.1.2+cuda9.0
+node206:5361:5502 [1] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:5361:5502 [1] INFO NET/IB : Using interface ib0 for sideband communication
+node206:5363:5511 [3] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:5363:5511 [3] INFO NET/IB : Using interface ib0 for sideband communication
+node206:5361:5502 [1] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:5361:5502 [1] INFO Using internal Network IB
+node206:5361:5502 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+node206:5363:5511 [3] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:5363:5511 [3] INFO Using internal Network IB
+node206:5363:5511 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+node206:5362:5503 [2] INFO NET : Using interface ib0:10.149.2.6<0>
+node206:5362:5503 [2] INFO NET/IB : Using interface ib0 for sideband communication
+node206:5362:5503 [2] INFO NET/IB: [0] mlx4_0:1/IB 
+node206:5362:5503 [2] INFO Using internal Network IB
+node206:5362:5503 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+2020-04-03 21:15:04.538233: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.25GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-04-03 21:15:04.543379: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.29GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+node206:5360:5504 [0] INFO CUDA Dev 0, IB Ports : mlx4_0/1(SOC) 
+node206:5361:5502 [1] INFO CUDA Dev 1, IB Ports : mlx4_0/1(SOC) 
+node206:5363:5511 [3] INFO CUDA Dev 3, IB Ports : mlx4_0/1(PHB) 
+node206:5362:5503 [2] INFO CUDA Dev 2, IB Ports : mlx4_0/1(PHB) 
+node206:5360:5504 [0] INFO Using 256 threads
+node206:5360:5504 [0] INFO Min Comp Cap 5
+node206:5360:5504 [0] INFO NCCL_SINGLE_RING_THRESHOLD=131072
+node206:5360:5504 [0] INFO [0] Ring 0 :    0   1   2   3
+node206:5363:5511 [3] INFO 3 -> 2 via P2P/IPC
+node206:5361:5502 [1] INFO 1 -> 0 via P2P/IPC
+node206:5363:5511 [3] INFO 3 -> 0 via direct shared memory
+node206:5361:5502 [1] INFO 1 -> 2 via direct shared memory
+node206:5362:5503 [2] INFO 2 -> 3 via P2P/IPC
+node206:5360:5504 [0] INFO 0 -> 1 via P2P/IPC
+node206:5360:5504 [0] INFO Launch mode Parallel
+Running benchmark...
+Iter #0: 103.5 img/sec per GPU
+Iter #1: 103.6 img/sec per GPU
+Iter #2: 103.5 img/sec per GPU
+Iter #3: 103.0 img/sec per GPU
+Iter #4: 103.9 img/sec per GPU
+Iter #5: 103.9 img/sec per GPU
+Iter #6: 103.4 img/sec per GPU
+Iter #7: 104.2 img/sec per GPU
+Iter #8: 103.7 img/sec per GPU
+Iter #9: 104.2 img/sec per GPU
+Img/sec per GPU: 103.7 +-0.7
+Total img/sec on 4 GPU(s): 414.8 +-2.8
+
+node206:5361:5502 [1] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:5361:5502 [1] INFO transport/shm.cu:249 -> 1
+node206:5361:5502 [1] INFO init.cu:100 -> 1
+
+node206:5363:5511 [3] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:5363:5511 [3] INFO transport/shm.cu:249 -> 1
+node206:5363:5511 [3] INFO init.cu:100 -> 1
+
+node206:5360:5504 [0] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:5360:5504 [0] INFO transport/shm.cu:257 -> 1
+node206:5360:5504 [0] INFO init.cu:102 -> 1
+
+node206:5362:5503 [2] include/shm.h:68 WARN Cuda failure 'invalid argument'
+node206:5362:5503 [2] INFO transport/shm.cu:257 -> 1
+node206:5362:5503 [2] INFO init.cu:102 -> 1

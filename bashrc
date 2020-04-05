@@ -34,5 +34,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/cm/shared/package/nccl/cuda90/nccl_2.1.
 /cm/shared/apps/cuda10.0/toolkit/10.0.130/extras/CUPTI/lib64
 
 alias sq="squeue -S \"N\""
+alias gpu-nodes="sinfo  -o \"%P %.10G %N\" -S \"%N\""
+alias gpu-types="sinfo -o \"%40N  %40f\""
 alias wsq="watch 'squeue -S \"N\"'"
 alias rms="rm slurm-*.out"

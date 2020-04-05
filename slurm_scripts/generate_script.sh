@@ -3,7 +3,7 @@
 SLURM_TEMPLATE="/home/sdhar/tudelft-research/slurm_scripts/job_template.job.jinja2"
 DISABLE_IB=0
 DISABLE_P2P=0
-NODE_LIST="node206"
+NODE_LIST="node221"
 GPUS_PER_NODE=4
 PYTHON_SCRIPT="/home/sdhar/tudelft-research/tensorflow/tensorflow_synthetic_benchmark.py"
 BATCH_SIZE=32
