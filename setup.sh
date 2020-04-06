@@ -6,6 +6,11 @@ set -e
 # Check to see if the virtualenv path has been specified
 [[ -z "$1" ]] && { echo "Please pass in the desired path for the virtualenv." ; exit 1; }
 
+# Preserve system's bashrc and replace with project's
+mv ~/.bashrc ~/bashrc
+ln -s ./bashrc ~/.bashrc
+source ~/.bashrc
+
 # Load Python3.5.2 to local environment because it is supported by
 # PyTorch
 module load python/3.5.2
