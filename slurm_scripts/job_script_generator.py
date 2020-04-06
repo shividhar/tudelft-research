@@ -17,9 +17,9 @@ modules = [
         "cuda10.0/profiler/10.0.130",
         "cuda10.0/toolkit/10.0.130",
         # For PyTorch this works
-        #"cuDNN/cuda90/7.1",
+        "cuDNN/cuda90/7.1",
         # Has to be this version for Tensorflow
-        "cuDNN/cuda10.0/7.6.4",
+        #"cuDNN/cuda10.0/7.6.4",
         "openmpi/gcc/64/4.0.2",
         "nccl/cuda90/2.1.2",
     ]
@@ -92,6 +92,7 @@ with open(args.jinja_template) as file_:
 print(template.render(
     timeout=args.timeout,
     disable_ib=args.disable_ib,
+    disable_p2p=args.disable_p2p,
     modules=modules,
     node_count=len(args.nodes.split(",")),
     nodes=args.nodes,

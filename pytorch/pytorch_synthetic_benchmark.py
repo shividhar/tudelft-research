@@ -28,9 +28,12 @@ parser.add_argument('--num-batches-per-iter', type=int, default=10,
                     help='number of batches per benchmark iteration')
 parser.add_argument('--num-iters', type=int, default=10,
                     help='number of benchmark iterations')
-
 parser.add_argument('--no-cuda', action='store_true', default=False,
                     help='disables CUDA training')
+parser.add_argument('--disable_ib', default=0,
+                    help='infiniband has been disabled')
+parser.add_argument('--disable_p2p', default=0,
+                    help='p2p communication has been disabled')
 
 args = parser.parse_args()
 args.cuda = not args.no_cuda and torch.cuda.is_available()
@@ -86,35 +89,6 @@ def log(s, nl=True, file_log=True):
     with open("/var/scratch/sdhar/logs/pytorch_synthetic.log","a") as f:
         f.write(s + "\n")
 
-def log_csv(
-    model,
-    batch_size,
-    device,
-    num_devices,
-    num_devices_per_node,
-    disable_nccl_p2p,
-    disable_ib,
-    img_sec_mean,
-    img_sec_conf,
-    total_img_sec_mean,
-    total_img_sec_conf):
-    if hvd.rank() != 0:
-        return
-    with open('/var/scratch/sdhar/logs/pytorch_synthetic.csv', 'a', newline='') as f:
-        csvwriter = csv.writer(f, lineterminator="\n")
-        csvwriter.writerow([
-            model,
-            batch_size,
-            device,
-            num_devices,
-            num_devices_per_node,
-            disable_nccl_p2p,
-            disable_ib,
-            img_sec_mean,
-            img_sec_conf,
-            total_img_sec_mean,
-            total_img_sec_conf])
-
 log("#### Start Training ####", file_log=True)
 
 log('Model: %s' % args.model, file_log=True)
@@ -144,16 +118,45 @@ log('Total img/sec on %d %s(s): %.1f +-%.1f' %
 
 log("#### End Training ####", file_log=True)
 
+def log_csv(
+    model,
+    batch_size,
+    device,
+    num_devices,
+    num_devices_per_node,
+    disable_ib,
+    disable_nccl_p2p,
+    img_sec_mean,
+    img_sec_conf,
+    total_img_sec_mean,
+    total_img_sec_conf):
+    if hvd.rank() != 0:
+        return
+    with open('/var/scratch/sdhar/logs/pytorch_synthetic.csv', 'a', newline='') as f:
+        csvwriter = csv.writer(f, lineterminator="\n")
+        csvwriter.writerow([
+            model,
+            batch_size,
+            device,
+            num_devices,
+            num_devices_per_node,
+            disable_ib,
+	    disable_nccl_p2p,
+            img_sec_mean,
+            img_sec_conf,
+            total_img_sec_mean,
+            total_img_sec_conf])
+
 log_csv(
     args.model,
     str(args.batch_size),
     device,
     str(hvd.size()),
     str(hvd.local_size()),
-    #Disable NCCL P2P Communication
-    "0",
     #Disable infiniband
-    "0",
+    str(args.disable_ib),
+    #Disable NCCL P2P Communication
+    str(args.disable_p2p), 
     str(img_sec_mean),
     str(img_sec_conf),
     str(hvd.size() * img_sec_mean),

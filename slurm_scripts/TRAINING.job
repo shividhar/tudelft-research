@@ -1,17 +1,19 @@
 #!/bin/bash
 
 # Preconditions: Please use the setup.py script to make a virtualenv
-# called "venv_pytorch"
+# called "venv_research"
 
 
-#SBATCH -N 1
-#SBATCH --gres=gpu:4
-#SBATCH --nodelist=node221
+
+#SBATCH -N 2
+#SBATCH --gres=gpu:1
+#SBATCH --nodelist=node001,node002
+#SBATCH -C TitanX
 
 # This is very important. It will limit the number of script
 # execution toexactly the required number of tasks.
 
-#SBATCH --ntasks-per-node=4
+#SBATCH --ntasks-per-node=1
 
 . /etc/bashrc
 . /etc/profile.d/modules.sh
@@ -38,18 +40,18 @@ module load nccl/cuda90/2.1.2
 
 
 # Start Python virtual environment
-source /var/scratch/sdhar/venv_pytorch/bin/activate
+source /var/scratch/sdhar/venv_research/bin/activate
 
-export PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/
+export PYTHONPATH=/var/scratch/sdhar/venv_research/lib/python3.5/site-packages/
 
 export LD_LIBRARY_PATH=/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/extras/CUPTI/lib64:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/tensorflow_core/libtensorflow_framework.so.2:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/var/scratch/sdhar/venv_research/lib/python3.5/site-packages/tensorflow_core/libtensorflow_framework.so.2:$LD_LIBRARY_PATH
 
 ### NOTE: May need to specify slots with specified host list
-mpirun -np 4 \
-   -H node221 \
+mpirun -np 2 \
+   -H node001,node002 \
    -bind-to none -map-by slot \
    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
    -x NCCL_IB_DISABLE=0 \
@@ -57,4 +59,4 @@ mpirun -np 4 \
    -mca pml ob1 -mca btl ^openib \
    -mca btl_tcp_if_include eth0 \
    --verbose \
-   python3 /home/sdhar/tudelft-research/tensorflow/tensorflow_synthetic_benchmark.py --batch-size=32
+   python3 /home/sdhar/tudelft-research/pytorch/pytorch_synthetic_benchmark.py --batch-size=32 --disable_ib=0 --disable_p2p=0

@@ -41,9 +41,12 @@ parser.add_argument('--num-batches-per-iter', type=int, default=10,
                     help='number of batches per benchmark iteration')
 parser.add_argument('--num-iters', type=int, default=10,
                     help='number of benchmark iterations')
-
 parser.add_argument('--no-cuda', action='store_true', default=False,
                     help='disables CUDA training')
+parser.add_argument('--disable_ib', type=int, default=0,
+                    help='Infiniband has been disabled')
+parser.add_argument('--disable_p2p', type=int, default=0,
+                    help='P2P communication has been disabled')
 
 args = parser.parse_args()
 args.cuda = not args.no_cuda
@@ -143,8 +146,8 @@ def log_csv(
     device,
     num_devices,
     num_devices_per_node,
-    disable_nccl_p2p,
     disable_ib,
+    disable_nccl_p2p,
     img_sec_mean,
     img_sec_conf,
     total_img_sec_mean,
@@ -159,8 +162,8 @@ def log_csv(
             device,
             num_devices,
             num_devices_per_node,
-            disable_nccl_p2p,
             disable_ib,
+            disable_nccl_p2p,
             img_sec_mean,
             img_sec_conf,
             total_img_sec_mean,
@@ -172,10 +175,10 @@ log_csv(
     device,
     str(hvd.size()),
     str(hvd.local_size()),
-    #Disable NCCL P2P Communication
-    "0",
     #Disable infiniband
-    "0",
+    str(args.disable_ib),
+    #Disable NCCL P2P Communication
+    str(args.disable_p2p),
     str(img_sec_mean),
     str(img_sec_conf),
     str(hvd.size() * img_sec_mean),

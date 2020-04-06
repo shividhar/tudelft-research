@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Preconditions: Please use the setup.py script to make a virtualenv
-# called "venv_pytorch"
+# called "venv_research"
+
 
 {% if timeout %}
 #SBATCH --time={{ timeout }}
@@ -9,6 +10,7 @@
 #SBATCH -N {{ node_count }}
 #SBATCH --gres=gpu:{{ gpus_per_node }}
 #SBATCH --nodelist={{ nodes }}
+#SBATCH -C TitanX
 
 # This is very important. It will limit the number of script
 # execution toexactly the required number of tasks.
@@ -24,14 +26,14 @@ module load {{ module }}
 {% endfor %}
 
 # Start Python virtual environment
-source /var/scratch/sdhar/venv_pytorch/bin/activate
+source /var/scratch/sdhar/venv_research/bin/activate
 
-export PYTHONPATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/
+export PYTHONPATH=/var/scratch/sdhar/venv_research/lib/python3.5/site-packages/
 
 export LD_LIBRARY_PATH=/cm/shared/package/nccl/cuda90/nccl_2.1.2-1+cuda9.0_x86_64/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/cm/shared/apps/cuda10.0/toolkit/10.0.130/extras/CUPTI/lib64:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/var/scratch/sdhar/venv_pytorch/lib/python3.5/site-packages/tensorflow_core/libtensorflow_framework.so.2:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/var/scratch/sdhar/venv_research/lib/python3.5/site-packages/tensorflow_core/libtensorflow_framework.so.2:$LD_LIBRARY_PATH
 
 ### NOTE: May need to specify slots with specified host list
 mpirun -np {{ node_count * gpus_per_node }} \
@@ -39,7 +41,7 @@ mpirun -np {{ node_count * gpus_per_node }} \
    -bind-to none -map-by slot \
    -x NCCL_DEBUG=INFO -x LD_LIBRARY_PATH -x PATH \
    -x NCCL_IB_DISABLE={{ disable_ib }} \
-   -x NCCL_P2P_DISABLE=0 \
+   -x NCCL_P2P_DISABLE={{ disable_p2p }} \
    -mca pml ob1 -mca btl ^openib \
    -mca btl_tcp_if_include eth0 \
    --verbose \
